@@ -1,0 +1,58 @@
+/* Color Variables */
+:root {
+  --primary-color: #2b6cb0;
+  --primary-hover: #2c5282;
+  --background: #f7fafc;
+  --text: #4a5568;
+  --container-bg: #fff;
+}
+
+/* Import custom fonts or files here  */
+/* Example: @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap'); */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+  /* Add your background image below */
+  background-image: url(https://images.pexels.com/photos/9096633/pexels-photo-9096633.jpeg); /* Replace with your image file or URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Optional: add a semi-transparent overlay for readability */
+  position: relative;
+}
+
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  background: var(--container-bg);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+p {
+  color: var(--text);
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 12px 24px;
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.cta:hover {
+  background: var(--primary-hover);
+}
