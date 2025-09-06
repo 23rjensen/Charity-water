@@ -8,18 +8,22 @@
 }
 
 /* Import custom fonts or files here  */
-/* Example: @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Nunito', sans-serif;
   margin: 0;
   padding: 0;
-  /* Set the background image */
-  background-image: url('https://images.pexels.com/photos/9096633/pexels-photo-9096633.jpeg');
+  /* Set the background image with proper parameters */
+  background-image: url('https://images.pexels.com/photos/9096633/pexels-photo-9096633.jpeg?auto=compress&w=1200');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   min-height: 100vh;
+  min-width: 100vw;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
 /* Make the container background semi-transparent for readability */
@@ -32,8 +36,13 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito', sans-serif;
+}
+
 h1 {
   color: var(--primary-color);
+  font-family: 'Nunito Sans', Arial, sans-serif;
 }
 
 p {
